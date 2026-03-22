@@ -10,47 +10,61 @@
   <img src="docs/images/03-clawbot-plugin.jpg" alt="微信 ClawBot 插件页面" width="32%" />
 </p>
 
-## 安装
+## 快速开始（推荐方式）
 
-### 依赖
-
-- Node.js >= 18
-- Bun >= 1.0（用于构建）
-- OpenCode CLI（命令为 `opencode`，且在 PATH 中可用）
-- 微信 iOS + ClawBot 能力
-
-### 安装步骤
+先克隆仓库到本地，然后执行：
 
 ```bash
-cd /Users/ruska/project/opencode-wechat
+cd opencode-wechat
 bun install
 bun run build
 npm link
 ```
 
-执行完 `npm link` 后，可在全局使用 `opencode-wechat` 命令。
+之后就可以全局使用 `opencode-wechat` 命令：
+
+```bash
+opencode-wechat setup  # 微信扫码登录
+opencode-wechat start  # 启动桥接
+```
+
+## 快速开始（直接运行源码）
+
+如果不想构建，也可以直接运行 TypeScript 源码（需要 Bun）：
+
+```bash
+cd opencode-wechat
+bun install
+bun opencode-wechat.ts setup
+bun opencode-wechat.ts start
+```
+
+或者直接使用 Node 运行构建后的版本（无需 Bun，只需 Node.js）：
+
+```bash
+cd opencode-wechat
+npm install
+npm run build
+node cli.mjs setup
+node cli.mjs start
+```
+
+## 依赖
+
+- Node.js >= 18
+- Bun >= 1.0（用于构建或直接运行源码）
+- OpenCode CLI（命令为 `opencode`，且在 PATH 中可用）
+- 微信 iOS + ClawBot 能力
 
 ## 使用
-
-### 1) 微信扫码登录
-
-```bash
-opencode-wechat setup
-```
-
-### 2) 启动桥接
-
-```bash
-opencode-wechat start
-```
 
 启动后保持进程运行，然后在微信 ClawBot 对话里发消息即可。
 
 ### 常用命令
 
-- `opencode-wechat setup`
-- `opencode-wechat start`
-- `opencode-wechat help`
+- `opencode-wechat setup` 或 `node cli.mjs setup` - 微信扫码登录
+- `opencode-wechat start` 或 `node cli.mjs start` - 启动桥接
+- `opencode-wechat help` 或 `node cli.mjs help` - 显示帮助
 
 ## 日志查看
 
