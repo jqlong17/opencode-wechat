@@ -2,6 +2,14 @@
 
 `opencode-wechat` 用于把微信 ClawBot 消息转发给 OpenCode，并把 OpenCode 回复再发回微信。
 
+## 截图
+
+<p align="center">
+  <img src="docs/images/01-wechat-chat.jpg" alt="微信对话效果" width="32%" />
+  <img src="docs/images/02-terminal-output.png" alt="终端扫码与运行日志" width="32%" />
+  <img src="docs/images/03-clawbot-plugin.jpg" alt="微信 ClawBot 插件页面" width="32%" />
+</p>
+
 ## 安装
 
 ### 依赖

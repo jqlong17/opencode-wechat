@@ -2,6 +2,14 @@
 
 `opencode-wechat` forwards WeChat ClawBot messages to OpenCode and sends OpenCode replies back to WeChat.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/images/01-wechat-chat.jpg" alt="WeChat conversation" width="32%" />
+  <img src="docs/images/02-terminal-output.png" alt="Terminal QR and runtime logs" width="32%" />
+  <img src="docs/images/03-clawbot-plugin.jpg" alt="WeChat ClawBot plugin page" width="32%" />
+</p>
+
 ## Installation
 
 ### Requirements
